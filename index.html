@@ -7,15 +7,35 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
+    <link rel="icon" href="images/purpleheart.png">
+
+ <!--background: url('/images/header.png'), url('images/footer.png');-->
+
 </head>
 <body>
-<main class="pl-45 mt-70">
+<header class="">
+    <div class="flex justify-between items-center w-full">
+        <div class="flex">
+            <p class="font-bold text-5xl">glaceon</p>
+            <p class="font-bold text-5xl text-violet-400">.</p>
+        </div>
+    
+        <div class="flex gap-8">
+            <p onclick="location.href='#EDUCATION'" class="font-bold text-3xl">education</p>
+            <p onclick="location.href='#LANGUAGES'" class="font-bold text-3xl">skills</p>
+        </div>
+    </div>
+</header>
+
+<main class="mt-70">
     <div class="flex flex-row">
         <div class="flex flex-col">
             <h1 class="font-bold text-7xl">FRONTEND</h1>
             <h2 class="text-violet-400 ml-10 text-7xl font-bold pb-5">DEVELOPER</h2>
         </div>
-            <a href=""><img class="glaceon w-55 rounded-xl" src="/images/MY BABY.gif"  HELP ME alt="">
+        
+        <img class="glaceon w-55 rounded-xl" src="/images/glaceon.gif">
+
     </div>
         <p class="text-xl">Hi! I'm <b><span class="text-violet-300">Glaceon.</span></b> A creative frontend developer with 1 year of experience.</p>
 
@@ -35,24 +55,88 @@
             </div>
         </div>
 
-
         <div class="flex gap-15">
-            <button class="bg-violet-700 p-3 w-30 mb-5 rounded-xl font-bold">Linkedin</button>
-            <button class="bg-violet-500 p-3 w-30 mb-5 rounded-xl font-bold">Projects</button>
-            <button class="bg-violet-400 p-3 w-30 mb-5 rounded-xl font-bold">CV</button>
+            <a onclick="location.href='#EDUCATION'" href="images/glaceon.gif"><button class="bg-violet-700 p-3 w-30 rounded-xl font-bold">Education</button></a>
+            <a onclick="location.href='#PROJECTS'"href="images/glaceon.gif"><button class="bg-violet-500 p-3 w-30 rounded-xl font-bold">Projects</button></a>
+            <a href="images/glaceon.gif"><button class="bg-violet-400 p-3 w-30 rounded-xl font-bold">CV</button></a>
         </div>
 </main>
-        
 
-        <div class="mt-60 flex items-center flex-col gap-3">
-            <h1 class="text-xl">Have a project in mind?</h1>
-            <p class="font-bold text-2xl">GLACEON@gmail.com</p>
-            <p>Copyright © 2025 GLACEON</p>
+<about>
+    <div class="flex flex-col items-center">
+        <div class="flex mt-30">
+                <h1 class="font-bold text-7xl">ABOUT</h1>
+                <h2 class="text-violet-400 ml-5 text-7xl font-bold pb-5">ME</h2>
+        </div>
+        <img class="h-1 w-100 mb-20" src="images/line.png">
+    </div>
+
+    <div class="flex gap-1">
+        <p class="text-2xl">Hi! My name is</p>
+        <p class="text-2xl text-violet-300"><b>Glaceon,</b></p>
+        <p class="text-2xl">I am a student and a <b>software developer.</b></p>
+
+        </p>
+
+        <div>
+            <img class="filter w-80 rounded-full" src="images/glaceonpfp.jpg" alt="">
+        </div>
+    </div>
+</about>
+
+<languages class="flex flex-col items-end ">
+    <div id="LANGUAGES" class="flex flex-col items-end">
+        <h1 class="font-bold text-7xl mt-50">MOST</h1>
+        <h2 class="text-violet-400 ml-10 text-7xl font-bold pb-5">PRACTICED</h2>
+    </div>
+
+    <img class="h-1 w-100 mb-20" src="images/line.png">
+
+    <div class="flex gap-15">
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/python.png"><p class="font-bold text-2xl">Python</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/javascript.png"><p class="font-bold text-2xl">JavaScript</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/html.png"><p class="font-bold text-2xl">HTML</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <img class="white h-15" src="images/css.png"><p class="font-bold text-2xl">CSS</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/tailwind.png"><p class="font-bold text-2xl">Tailwind</p>
+        </div>
+    </div>
+</languages>
+
+<education>
+    <div id="EDUCATION" class="flex flex-col mt-90">
+        <h1 class="font-bold text-7xl">MY</h1>
+        <h2 class="text-violet-400 ml-10 text-7xl font-bold pb-5">EDUCATION</h2>
+    </div>
+
+    <img class="h-1 w-100 mb-20 ml-10" src="images/line.png">
+</education>
+        
+<contact>
+    <div id="contact" class="mt-60 flex items-center flex-col gap-3">
+        <h1 class="text-xl">Have a project in mind?</h1>
+        <p class="font-bold text-2xl">glaceon@gmail.com</p>
+        <p>Copyright © 2025 GLACEON</p>
             <div class="flex flex-row gap-7">
                 <img class="mail w-10 rounded-full shadow-xl" src="/images/mail.jpg" alt="">
                 <img class="phone w-10 rounded-sm shadow-xl " src="/images/phone.png" alt="">
                 <img class="face w-10 rounded-sm shadow-xl" src="/images/facebook.svg" alt="">
             </div>
-        </div>
+    </div>
+</contact>
+
+
 </body>
 </html>

@@ -3,10 +3,10 @@ html{
 }
 
 body{
+    margin-left: 150px;
+    margin-right: 150px;
     color: #ffffff;
     padding: 50px;
-    background: url('/images/header.png'),
-                url('/images/footer.png');
     background-repeat: no-repeat;
     background-size: 1650px;
 }
@@ -33,4 +33,7 @@ body{
     filter: hue-rotate(50deg);
 }
 
+.white{
+    filter: invert(100%)   
+  }
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
